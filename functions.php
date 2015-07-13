@@ -5,6 +5,14 @@
  * @package bootstrapwp
  */
 
+// Include the Redux theme options Framework
+if ( !class_exists( 'ReduxFramework' ) ) {
+	require_once( get_template_directory() . '/redux/framework.php' );
+}
+
+// Register all the theme options
+require_once( get_template_directory() . '/inc/redux-config.php' );
+
 if ( ! function_exists( 'bootstrapwp_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
