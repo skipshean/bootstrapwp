@@ -49,7 +49,7 @@
 						<?php if($logo !== '') { ?>
 							<a href="<?php bloginfo( 'url' ) ?>/" class="logo" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><img src="<?php echo $logo ?>"  alt="<?php bloginfo( 'name' ) ?>"></a>
 						<?php } else { ?>
-							<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
+							<div></div>
 						<?php } ?>
 					</div><!-- /.iconlogo -->
 					<div class="wordmark">

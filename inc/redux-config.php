@@ -327,7 +327,7 @@
                         ),
                          array( 
                             'title'     => __( 'Logo', 'bootstrapwp' ),
-                            'subtitle'  => __( 'Use this field to upload your custom logo icon for use in the theme header. This is the icon that will be visible in mobile and animated rotation on hover at top left. (Recommended 50px x 50px)', 'bootstrapwp' ),
+                            'subtitle'  => __( 'Use this field to upload your custom logo icon for use in the theme header. This is the icon that will be visible in mobile and animated rotation on hover at top left. (Recommended 40px x 40px)', 'bootstrapwp' ),
                             'id'        => 'custom_logo',
                             'default'   => '',
                             'type'      => 'media',
