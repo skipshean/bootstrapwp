@@ -44,14 +44,22 @@
 						<span class="icon-bar"></span>
 					</button>
 
-					<?php $logo = bswp_option('custom_logo', false, 'url'); ?>
-
-					<?php if($logo !== '') { ?>
-						<a href="<?php bloginfo( 'url' ) ?>/" class="logo" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><img src="<?php echo $logo ?>"  alt="<?php bloginfo( 'name' ) ?>"></a>
-					<?php } else { ?>
-						<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
-					<?php } ?>
-					
+					<div class="iconlogo">
+						<?php $logo = bswp_option('custom_logo', false, 'url'); ?>
+						<?php if($logo !== '') { ?>
+							<a href="<?php bloginfo( 'url' ) ?>/" class="logo" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><img src="<?php echo $logo ?>"  alt="<?php bloginfo( 'name' ) ?>"></a>
+						<?php } else { ?>
+							<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
+						<?php } ?>
+					</div><!-- /.iconlogo -->
+					<div class="wordmark">
+						<?php $wordmark = bswp_option('custom_wordmark', false, 'url'); ?>
+						<?php if($wordmark !== '') { ?>
+							<a href="<?php bloginfo( 'url' ) ?>/" class="wmark" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><img src="<?php echo $wordmark ?>"  alt="<?php bloginfo( 'name' ) ?>"></a>
+						<?php } else { ?>
+							<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
+						<?php } ?>
+					</div><!-- /.wordmark -->
 				</div>
 
 				<div class="navbar-collapse collapse navbar-responsive-collapse">

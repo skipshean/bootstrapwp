@@ -327,8 +327,16 @@
                         ),
                          array( 
                             'title'     => __( 'Logo', 'bootstrapwp' ),
-                            'subtitle'  => __( 'Use this field to upload your custom logo for use in the theme header. (Recommended 200px x 40px)', 'bootstrapwp' ),
+                            'subtitle'  => __( 'Use this field to upload your custom logo icon for use in the theme header. This is the icon that will be visible in mobile and animated rotation on hover at top left. (Recommended 50px x 50px)', 'bootstrapwp' ),
                             'id'        => 'custom_logo',
+                            'default'   => '',
+                            'type'      => 'media',
+                            'url'       => true,
+                        ),
+                        array( 
+                            'title'     => __( 'Wordmark', 'bootstrapwp' ),
+                            'subtitle'  => __( 'Use this field to upload your custom logo for use in the theme header. Will not be visible on tablets and mobile. (Recommended 200px x 50px)', 'bootstrapwp' ),
+                            'id'        => 'custom_wordmark',
                             'default'   => '',
                             'type'      => 'media',
                             'url'       => true,

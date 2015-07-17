@@ -81,6 +81,8 @@ transition-property: transform;
 overflow:hidden;
 margin-top: 3px;
 
+max-height: 40px;
+
 }
 .logo img:hover
 {
@@ -88,8 +90,16 @@ margin-top: 3px;
 -moz-transform:rotate(360deg);
 -o-transform:rotate(360deg);
 }
-
-
+.iconlogo{
+	float:left;
+	display: block;
+	padding: 0 5px 0 0;
+}
+.wordmark{
+	float:left;
+	display: block;
+	padding: 0 20px 0 0;
+}
 
 /*--------------------------------------------------------------
 # Widgets

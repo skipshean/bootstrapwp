@@ -10,7 +10,7 @@ if ( !class_exists( 'ReduxFramework' ) ) {
 /**
  * Include the Redux theme options Framework
 **/ 
-	require_once( get_template_directory() . '/redux/framework.php' );
+require_once( get_template_directory() . '/redux/framework.php' );
 }
 // Register all the theme options
 require_once( get_template_directory() . '/inc/redux-config.php' );
