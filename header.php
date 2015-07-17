@@ -47,7 +47,7 @@
 					<?php $logo = bswp_option('custom_logo', false, 'url'); ?>
 
 					<?php if($logo !== '') { ?>
-						<a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><img src="<?php echo $logo ?>" alt="<?php bloginfo( 'name' ) ?>"></a>
+						<a href="<?php bloginfo( 'url' ) ?>/" class="logo" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><img src="<?php echo $logo ?>"  alt="<?php bloginfo( 'name' ) ?>"></a>
 					<?php } else { ?>
 						<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
 					<?php } ?>
