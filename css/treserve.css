@@ -1,0 +1,9 @@
+#global-header{
+	height: 40px;	
+}
+
+
+@media (min-width: 768px)  {
+	#global-header{ height: 90px; }
+	#global-header.hr-not-top.hr-unpinned:not(.search-active ){height: 60px;}
+}

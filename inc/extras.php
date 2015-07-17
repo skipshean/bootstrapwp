@@ -75,7 +75,13 @@ endif;
  */
 function modify_read_more_link() {
 
-	return '<p><a class="more-link btn btn-default" href="' . get_permalink() . '">Read More</a></p>';
+	$read_txt = bswp_option('read_more_text', 'Read More');
+	$btn_block = (bswp_option('read_more_block') == '1' ? 'btn-block' : '');
+	$btn_size = 'btn-' . bswp_option('read_more_size');
+	$btn_color = 'btn-' . bswp_option('read_more_color');
+
+
+	return '<p><a class="more-link btn '. $btn_color .' '. $btn_size .' '. $btn_block .'" href="' . get_permalink() . '">'. $read_txt .'</a></p>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 

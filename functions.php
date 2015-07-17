@@ -5,13 +5,18 @@
  * @package bootstrapwp
  */
 
-// Include the Redux theme options Framework
+
 if ( !class_exists( 'ReduxFramework' ) ) {
+/**
+ * Include the Redux theme options Framework
+**/ 
 	require_once( get_template_directory() . '/redux/framework.php' );
 }
-
 // Register all the theme options
 require_once( get_template_directory() . '/inc/redux-config.php' );
+// Theme options functions
+require_once( get_template_directory() . '/inc/bswp-options.php' );
+
 
 if ( ! function_exists( 'bootstrapwp_setup' ) ) :
 /**
@@ -139,7 +144,7 @@ add_action( 'widgets_init', 'bootstrapwp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function bootstrapwp_scripts() {
-	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.5', 'all' );
+	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/css/'. bswp_option('css_style', 'bootstrap.min.css'), array(), '3.3.5', 'all' );
 
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.2.0', 'all' );
 
@@ -203,17 +208,25 @@ require get_template_directory() . '/inc/bootstrap-walker.php';
  * Comments Callback.
  */
 require get_template_directory() . '/inc/comments-callback.php';
+
 /**
  * Author Meta.
  */
 require get_template_directory() . '/inc/author-meta.php';
+
 /**
  * Search Results - Highlight.
  */
 require get_template_directory() . '/inc/search-highlight.php';
+
 /**
  * Custom Post Types
  */
 require get_template_directory() . '/inc/post-types/CPT.php';
 //Portfolio Custom Post Type
 require get_template_directory() . '/inc/post-types/register-portfolio.php';
+
+/**
+ * Theme Options - Custom CSS.
+ */
+require get_template_directory() . '/inc/custom-css.php';
